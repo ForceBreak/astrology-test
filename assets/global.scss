@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+body{
+    margin: 0;
+}
+.overflow-hidden{
+    overflow: hidden;
+}
+.el-main{
+    padding: 0;
+}
+.orange-bg{
+    background: linear-gradient(228.35deg, #FFB15E 1.93%, #FB7474 82.66%);;
+}
+.z-index{
+    &-1{
+        z-index: 1;
+    }
+}
+h1{
+    font-size: 20px;
+}
+
+// Position
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+
+//Display
+.d{
+    &-block{
+        display: block;
+    }
+    &-flex{
+        display: flex;
+    }
+}
+.justify-center{
+    justify-content: center;
+}
+.direction-column{
+    flex-direction: column;
+}
+.justify-between{
+    justify-content: space-between;
+}
+
+//Heigth
+.full-height{
+    height: 100vh;
+}
+.h-100{
+    height: 100%;
+}
+
+//Width
+.w-100{
+    width: 100%;
+}
+
+//Card
+.regular-card-heigth{
+    height: calc(100% - 75px);
+}
+.border-0{
+    border: none;
+}
+.card-border-radius{
+    border-radius: 20px 20px 0px 0px; 
+}
+.p-0{
+    padding: 0;
+}
+.mt-75{
+    margin-top: 75px;
+}
+.mt-15{
+    margin-top: 15px;
+}
+.mb-15{
+    margin-bottom: 15px;
+}
+.m-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+.mb-50{
+    margin-bottom: 50px;
+}
+
+//Ovals
+.oval{
+    position: absolute;
+    mix-blend-mode: normal;
+    opacity: 0.06;
+    border: 20px solid #FFFFFF;
+    border-radius: 100%;
+    &-bottom{
+        border:20px solid #FEA163;
+    }
+    &-wrap{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 75px;
+        position: relative;
+        max-width: 375px;
+        margin: 0 auto;
+        &-bottom{
+            position: static;
+        }
+    }
+    &-large{
+        width: 439px;
+        height: 439px;
+        top: -51px;
+        &-bottom{
+            width: 439px;
+            height: 439px;
+            bottom: -300px;
+            opacity: 0.03;
+        }
+    }
+    &-big{
+        width: 320px;
+        height: 320px;
+        &-bottom{
+            bottom: -250px;
+            opacity: 0.06;
+        }
+    }   
+    &-small{
+        width: 195px;
+        height: 195px;
+        top: 55px;
+        &-bottom{
+            width: 195px;
+            height: 195px;
+            bottom: -180px;
+            opacity: 0.11;
+        }
+    }
+}
+.star{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    &-left{
+        left: 66px;
+        top: 25px;
+    }
+    &-center{
+        left: 182px;
+        top: 32px;
+    }
+    &-right{
+        left: 289px;
+        top: 29px;
+    }
+}
+
+//Figures
+.figure{
+    &-triangle{
+        right: 0;
+        top: 18px;
+    }
+    &-oval{
+        left: 0;
+        top: 56px; 
+        &-bold{
+            right: 30px;
+            top: 90px;  
+        }
+    }
+    &-rectangle{
+        left: 60px;
+        top: 120px;
+    }
+}
+
+// Text
+.uppercase{
+    text-transform: uppercase;
+}
+.text{
+    &-white{
+        color: white;
+        &:focus{
+            color: white;
+        }
+        &:hover{
+            color: white;
+        }
+    }
+    &-center{
+        text-align: center;
+    } 
+}
+.base-font{
+    font-family: 'Roboto', sans-serif;
+    &-bold{
+        font-weight: bold;
+    }
+    &-size{
+        font-size: 16px;
+    }
+}
+
+//Buttons
+.base-button{
+    background: linear-gradient(90deg, #FC866F 0%, #FEA263 93.31%);
+    border-radius: 29px;
+    width: 314px;
+    height: 58px;
+    &:before{
+        content: '';
+        display: block;
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        height: 12px;
+        left: 0;
+        bottom: -12px;
+        background: linear-gradient(90deg, #FC856E 0%, #FEA263 100%);
+        filter: blur(30px);
+        border-radius: 20px;
+    }
+}
+
+//Absolute positions
+.bottom{
+    &-0{
+        bottom: 0;
+    }
+    &-button{
+       bottom: 50px; 
+    }
+}
+
+// Text input
+.base-input{
+    input{
+        width: 314px;
+        height: 58px;
+        background: #F5F5F5;
+        mix-blend-mode: normal;
+        border-radius: 29px; 
+        font-size: 18px;
+        line-height: 21px;
+        color: #575167;
+        border: 0;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        opacity: 0.8;
+    }
+
+    // opacity: 0.4;
+}
